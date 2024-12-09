@@ -1,0 +1,89 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+}
+
+h1, h2 {
+    text-align: center;
+    color: #c00000;
+}
+
+h2.section-title {
+    margin-top: 20px;
+    color: #c00000;
+    text-align: center;
+}
+
+/* Contenedor principal de productos */
+.productos-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centrar productos horizontalmente */
+}
+
+/* Caja de cada producto */
+.box {
+    width: 22%; /* Máximo 4 columnas */
+    margin: 15px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #fff;
+    text-align: center;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    height: 435 px; /* Altura uniforme para todas las tarjetas */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Espacio entre los elementos */
+}
+
+.box:hover {
+    transform: scale(1.05);
+}
+
+/* Estilo de la imagen del producto */
+.box img {
+    width: auto;
+    height: 180px; /* Ajustar la altura de la imagen */
+    object-fit: contain; /* Mantiene la proporción de la imagen */
+    margin-bottom: 10px;
+}
+
+/* Texto dentro del producto */
+.product-txt h3 {
+    font-size: 16px;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.product-txt p {
+    font-size: 14px;
+    color: #777;
+}
+
+/* Precio del producto */
+.precio {
+    font-size: 16px;
+    color: #c00000;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Botón de agregar al carrito */
+.btn-3 {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 14px;
+    display: inline-block;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.btn-3:hover {
+    background-color: #0056b3;
+}
+

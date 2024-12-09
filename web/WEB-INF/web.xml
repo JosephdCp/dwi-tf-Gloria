@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee                               http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <!-- Definir el servlet ProductoServlet -->
+    <servlet>
+        <servlet-name>ProductoServlet</servlet-name>
+        <servlet-class>com.gloria.controller.ProductoServlet</servlet-class>
+    </servlet>
+    <!-- Asignar la URL /productos al servlet ProductoServlet -->
+    <servlet-mapping>
+        <servlet-name>ProductoServlet</servlet-name>
+        <url-pattern>/productos</url-pattern>
+    </servlet-mapping>
+    
+</web-app>
